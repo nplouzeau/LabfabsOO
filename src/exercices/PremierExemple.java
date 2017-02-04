@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 public class PremierExemple {
 
 	public static void main(String[] args) {
-		
+
 		exo4();
 	}
 
@@ -47,11 +47,8 @@ public class PremierExemple {
 			for (int candidat = destination + 1; candidat < tableauATrier.length; candidat++) {
 				if (tableauATrier[candidat] < tableauATrier[destination]) {
 					// On a trouvé plus petit, il faut garder ce candidat
-					int temporaire = tableauATrier[destination]; // Ne perdons
-																	// pas la
-																	// valeur
-																	// qui a
-																	// perdu ;-)
+					// Ne perdons pas la valeur qui a perdu la comparaison ;-)
+					int temporaire = tableauATrier[destination];
 					tableauATrier[destination] = tableauATrier[candidat];
 					tableauATrier[candidat] = temporaire;
 				}
