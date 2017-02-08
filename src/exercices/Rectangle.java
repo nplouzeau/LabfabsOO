@@ -1,6 +1,6 @@
 package exercices;
 
-public class Rectangle {
+public class Rectangle implements Forme {
 	private double largeur;
 	private double hauteur;
 
