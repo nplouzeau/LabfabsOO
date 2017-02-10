@@ -12,3 +12,19 @@ Exercices DU Labfab 2017-02-10
 
 **Question.** Combien de méthodes sont accessibles dans `ArrayList` ?
 
+## Exercice 2
+
+On considère les alternatives de code suivantes :
+
+```
+ArrayList<String> liste1 = new ArrayList<>();
+
+List<String> liste2 = new ArrayList<>();
+
+Collection<String> liste3 = new ArrayList<>;
+
+```
+
+**Question.** En utilisant la Javadoc de la bibliothèque standard, indiquez quelle est la déclaration la plus générale. Justifiez votre réponse, en expliquant l'intérêt de ce choix. 
+
+
