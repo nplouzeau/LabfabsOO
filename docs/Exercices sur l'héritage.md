@@ -40,7 +40,7 @@ public interface Filtre {
 
 ```
 
-**Question.** Définir une classe `VerifieLongueur` qui implémente l'interface Filtre en retournant `true` lors de l'appel à `chaineAcceptable` si et seulement si la chaîne passée en paramètre est de longueur inférieure à un maximum définit lors de l'instantiation d'un objet de la classe `VerifieLongueur`.
+**Question.** Définir une classe `VerifieLongueur` qui implémente l'interface Filtre en retournant `true` lors de l'appel à `chaineAcceptable` si et seulement si la chaîne passée en paramètre est de longueur inférieure à un maximum défini lors de l'instantiation d'un objet de la classe `VerifieLongueur`.
 
 Conseils :
 
