@@ -46,3 +46,20 @@ Conseils :
 
 - Commencez par écrire une classe de test `VerifieLongueurTest`, selon le procédé vu en cours
 - Vous aurez besoin de définir explicitement un constructeur, voir la vidéo EPFL nommée `Constructeurs par défaut`.
+
+**Question.** Définir une classe `ListeVerifiee` qui hérite de `ArrayList<String>` et  modifie la méthode `add` de cette classe pour interdire d'ajouter des `String` qui ne satisfont pas le filtre.
+
+```
+public class ListeVerifiee extends ArrayList<String> { //TODO
+	@Override
+	public boolean add(String chaine) { //TODO
+	}
+}
+```
+
+Conseils :
+
+- Là aussi, commencez par écrire votre classe de test
+- Vous aurez besoin de définir un constructeur qui prend un objet de type `Filtre` en paramètre. Cet objet sera utilisé dans votre implémentation de `add(String)`.
+
+ 
