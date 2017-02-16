@@ -10,4 +10,6 @@ public interface Cuve {
 	
 	public int getNiveau();
 	
+	public void setAlerteDebordement(Alerte alerteAExecuter);
+	
 }

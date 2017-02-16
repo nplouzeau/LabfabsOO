@@ -1,11 +1,13 @@
 package laiterie;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class CuveStandard implements Cuve {
-	private Collection<ObservateurCuve> observateurs;
+	private Collection<ObservateurCuve> observateurs = new ArrayList<>();
 	private final int capacite = 100000;
 	private int niveau;
+	private Alerte alerteDebordement;
 
 	/**
 	 * Ajoute le volume dans la cuve.
@@ -21,6 +23,9 @@ public class CuveStandard implements Cuve {
 			throw new IllegalArgumentException();
 		}
 		niveau = niveau + volume;
+		if(niveau > capacite) {
+			alerteDebordement.executer();
+		}
 		notifierObservateurs();
 	}
 
@@ -49,5 +54,10 @@ public class CuveStandard implements Cuve {
 	@Override
 	public int getNiveau() {
 		return niveau;
+	}
+
+	@Override
+	public void setAlerteDebordement(Alerte alerteAExecuter) {
+		alerteDebordement = alerteAExecuter;
 	}
 }
