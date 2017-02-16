@@ -8,4 +8,6 @@ public interface Cuve {
 
 	public void inscrire(ObservateurCuve obs);
 	
+	public int getNiveau();
+	
 }
